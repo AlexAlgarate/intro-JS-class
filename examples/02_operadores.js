@@ -38,3 +38,12 @@ console.log(NaN === NaN); // false
 console.log(isNaN('Perro' + 1)); // true, sumar string + Number == NaN
 
 // && || ,
+
+const product = 'pants',
+  thirdPrice = 10,
+  cantidad = 10;
+
+console.log(product, thirdPrice, cantidad);
+
+console.log(firstProductPrice < secondProductPrice && firstProductPrice === thirdPrice); // true
+console.log(firstProductPrice < secondProductPrice || firstProductPrice === thirdPrice); // true
