@@ -1,6 +1,6 @@
 // asignacion
 
-const x = 10;
+let x = 10;
 let y = 20;
 
 // aritmeticos
@@ -47,3 +47,11 @@ console.log(product, thirdPrice, cantidad);
 
 console.log(firstProductPrice < secondProductPrice && firstProductPrice === thirdPrice); // true
 console.log(firstProductPrice < secondProductPrice || firstProductPrice === thirdPrice); // true
+
+// asignacion
+console.log('x:', x); // 10
+console.log(x++); // 11
+console.log(x--); // 9
+
+console.log((x += 5)); // 15
+console.log((x -= 5)); // 5
