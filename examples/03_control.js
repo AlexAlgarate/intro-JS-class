@@ -159,3 +159,51 @@ console.log(valor4, ' -- ', valor4 ? 'Es verdadero' : 'Es falso');
 console.log(valor5, ' -- ', valor5 ? 'Es verdadero' : 'Es falso');
 console.log(valor6, ' -- ', valor6 ? 'Es verdadero' : 'Es falso');
 console.log(valor7, ' -- ', valor7 ? 'Es verdadero' : 'Es falso');
+
+const price = parseInt(prompt('Dime un precio')); // Devuelve Null si no se le pasa nada a prompt o el valro en forma de cadena de texto
+console.log(price);
+console.log(typeof price);
+
+message = '';
+
+if (price) {
+  message = 'Tiene precio';
+} else {
+  message = 'No tiene precio';
+}
+console.log(message);
+
+/*
+EJERCICIO 2
+
+Crea un programa que determine si un usuario puede recibir una promoción basada en su selección de productos.
+
+Instrucciones:
+
+1. Crea dos variables que representen el nombre de un producto seleccionado por el usuario y la cantidad. (En nuestro caso será usando prompt).
+  const selectedProduct = prompt('Ingresa el nombre del producto');
+  const selectedQuantity = parseInt(prompt('Ingresa la cantidad'));
+
+
+2. Usa operadores lógicos para determinar si el usuario puede tener para una promoción especial:
+  -Si selecciona un "T-shirt" y la cantidad es 2 o más, el mensaje será "¡Recibes un 10% de descuento en la segunda camiseta!".
+  -Si selecciona un "Cap" y la cantidad es 3 o más, el mensaje será "¡Obtén una gorra gratis por la compra de 3!".
+  -Si no cumple ninguna de las condiciones, el mensaje será "No hay promociones para esta selección".
+
+Muestra el mensaje en un único console.log.
+
+*/
+
+const selectedProduct = prompt('Ingresa el nombre del producto');
+const selectedQuantity = parseInt(prompt('Ingresa la cantidad'));
+
+let messageExercise2 = '';
+
+if (selectedProduct === 'T-shirt' && selectedQuantity >= 2) {
+  messageExercise2 = '¡Recibes un 10% de descuento en la segunda camiseta!';
+} else if (selectedProduct === 'Cap' && selectedQuantity >= 3) {
+  messageExercise2 = '¡Obtén una gorra gratis por la compra de 3!';
+} else {
+  messageExercise2 = 'No hay promociones para esta selección';
+}
+console.log(messageExercise2);
