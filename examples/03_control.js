@@ -52,3 +52,30 @@ console.log(sameName); // false
 console.log(samePrice); // false
 
 console.log(message2); // "Son diferentes"
+
+// Switch
+const day = 'Tuesday';
+let message3 = '';
+/*
+if (day == 'Monday') {
+  message3 = 'Hay clase es Lunes';
+} else if (day == 'Tuesday') {
+  message3 = 'Hay clase es Martes';
+} else {
+  message3 = 'No hay clase';
+}
+*/
+
+switch (day) {
+  case 'Monday':
+    message3 = 'Hay clase es Lunes';
+    break;
+  case 'Tuesday':
+    message3 = 'Hay clase es Martes';
+    break;
+  default:
+    message3 = ' No hay clase';
+    break;
+}
+
+console.log(message3);
