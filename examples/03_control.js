@@ -48,4 +48,7 @@ const sameName = firstProductName === secondProductName;
 const samePrice = firstProductPrice === secondProductPrice;
 
 const message2 = sameName && samePrice ? 'Mismos productos' : 'Son diferentes';
-console.log(message2);
+console.log(sameName); // false
+console.log(samePrice); // false
+
+console.log(message2); // "Son diferentes"
