@@ -1,6 +1,6 @@
 // Ejercicio 3.1
 
-const yourFunction = (array) => {
+const createPath = (array) => {
   const extension = array.slice(-1)[0];
   const path = array.slice(0, -1).join('/');
 
@@ -8,9 +8,9 @@ const yourFunction = (array) => {
 };
 
 const input1 = ['Downloads', 'Videos', 'capture', 'mp4'];
-yourFunction(input1); // 'Downloads/Videos/capture.mp4'
+createPath(input1); // 'Downloads/Videos/capture.mp4'
 const input2 = ['CodinGame', 'python', 'py'];
-yourFunction(input2); // 'CodinGame/python.py'
+createPath(input2); // 'CodinGame/python.py'
 const input3 = [
   'programming',
   'languages',
@@ -20,5 +20,5 @@ const input3 = [
   'pythonstuff',
   'py',
 ];
-yourFunction(input3);
+createPath(input3);
 // 'programming/languages/easy/beginner/useful/pythonstuff.py'
