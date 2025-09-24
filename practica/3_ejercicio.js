@@ -38,3 +38,21 @@ const secondInput = 1;
 dashSeparator(secondInput); // '1'
 const thirdInput = 11234;
 dashSeparator(thirdInput); // '1-1-2-3-4'
+
+// 3.3 Ejercicio
+// Crea una función para que con estos datos de entrada se produzca los siguientes
+// resultados:
+
+const yourFunction = (word) => {
+  const reversedWord = word.split('').reverse().join('');
+
+  console.log(`${word.length} ${reversedWord}`);
+};
+
+const input4 = 'string';
+// create your function here
+yourFunction(input4); // '6 gnirts'
+const input5 = 'variable';
+yourFunction(input5); // '8 elbairav'
+const input6 = 'pointer';
+yourFunction(input6); // '7 retniop'
