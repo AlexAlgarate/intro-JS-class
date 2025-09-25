@@ -78,4 +78,3 @@ for (let num of numbers) {
 }
 
 console.log('even:', evenNumbers, 'odd: ', oddNumbers);
-console.log(false % 2);
