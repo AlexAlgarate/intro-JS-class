@@ -78,3 +78,17 @@ for (let num of numbers) {
 }
 
 console.log('even:', evenNumbers, 'odd: ', oddNumbers);
+
+const usersProducts = [
+  ['Tv', 'PC'],
+  ['Cap', 'T-shirt'],
+  ['Pants', 'Jeans'],
+];
+
+console.log(usersProducts[0]);
+
+for (let array of usersProducts) {
+  for (let element of array) {
+    console.log(element);
+  }
+}
