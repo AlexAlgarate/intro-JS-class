@@ -52,6 +52,30 @@ for (let index = 0; index < fruits.length; index++) {
 }
 console.log(newFruitList);
 
-// for (let fruit of fruits) {
-//   console.log(fruit);
-// }
+// Bucle for of
+for (let fruit of fruits) {
+  console.log(fruit);
+}
+
+/*
+Dado este listado de valores, crea un programa que separe los números pares de los impares en dos arrays diferentes.
+*/
+const numbers = [1, 2, 33, 41, 5, 60, 74, 87, 90, 101, null, '', false, NaN];
+
+let evenNumbers = []; // Array para almacenar números pares
+let oddNumbers = []; // Array para almacenar números impares
+
+// Para mostrarlos por pantalla que se muestren en un console.log fuera del bucle
+
+for (let num of numbers) {
+  if (typeof num === 'number' && !isNaN(num)) {
+    if (num % 2 === 0) {
+      evenNumbers = [...evenNumbers, num];
+    } else {
+      oddNumbers = [...oddNumbers, num];
+    }
+  }
+}
+
+console.log('even:', evenNumbers, 'odd: ', oddNumbers);
+console.log(false % 2);
